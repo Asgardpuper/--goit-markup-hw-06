@@ -496,15 +496,114 @@
             </li>
           </ul>
         </div>
+        <div class="send-email">
+          <b class="send-email-title">Підпишіться на розсилку</b>
+          <form class="email-form">
+            <input
+              class="email-form-input"
+              type="email"
+              name="userEmail"
+              id="mail"
+              placeholder="E-mail"
+            />
+            <button class="send-email-btn" type="submit">
+              <p class="btn-email-text">Підписатися</p>
+              <svg class="btn-email-icon" width="24px" height="24px">
+                <use
+                  href="./images/svg__sprite/symbol-defs.svg#icon-icon-send"
+                ></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-button" data-modal-close>
           <svg class="modal-button-icon" width="11" height="11">
-            <use href="./images/svg__sprite/symbol-defs.svg#icon-close"></use>
+            <use
+              href="./images/svg__sprite/symbol-defs.svg#icon-close-icon"
+            ></use>
           </svg>
         </button>
+        <div class="register-container">
+          <h2 class="register-title">Залиште свох дані, ми вам передзвонимо</h2>
+
+          <form class="form-container">
+            <div class="form">
+              <label class="form-label" for="name">Ім'я</label>
+              <div class="form-field-positioning">
+                <input
+                  class="form-input"
+                  type="text"
+                  name="userName"
+                  id="name"
+                />
+                <svg class="form-icon" width="12" height="12">
+                  <use
+                    href="./images/svg__sprite/symbol-defs.svg#icon-icon-person"
+                  ></use>
+                </svg>
+              </div>
+            </div>
+
+            <div class="form">
+              <label class="form-label" for="tel">Телефон</label>
+              <div class="form-field-positioning">
+                <input class="form-input" type="tel" name="userTel" id="tel" />
+                <svg class="form-icon" width="13" height="13">
+                  <use
+                    href="./images/svg__sprite/symbol-defs.svg#icon-icon-tel"
+                  ></use>
+                </svg>
+              </div>
+            </div>
+
+            <div class="form">
+              <label class="form-label" for="mail">Пошта</label>
+              <div class="form-field-positioning">
+                <input
+                  class="form-input"
+                  type="email"
+                  name="userMail"
+                  id="mail"
+                />
+                <svg class="form-icon" width="15" height="12">
+                  <use
+                    href="./images/svg__sprite/symbol-defs.svg#icon-icon-mail"
+                  ></use>
+                </svg>
+              </div>
+            </div>
+
+            <div class="form">
+              <label class="form-label" for="coments"> Коментар </label>
+              <textarea
+                class="form-textarea"
+                name="coments"
+                id="coments"
+                rows="10"
+                placeholder="Введіть текст"
+              ></textarea>
+            </div>
+
+            <div class="form-policy">
+              <div class="policy-positioning"></div>
+              <input
+                class="policy-checkbox"
+                type="checkbox"
+                name="policy"
+                id="policy"
+              />
+              <label class="policy-label" for="policy">
+                Погоджуюся з розсилкою та приймаю
+                <a href="#">Умови договору</a></label
+              >
+              <button class="btn-form" type="submit">Відправити</button>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
     <script src="./js/modal.js"></script>
