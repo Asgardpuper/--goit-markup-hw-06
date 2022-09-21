@@ -583,29 +583,34 @@
                 class="form-textarea"
                 name="coments"
                 id="coments"
-                rows="10"
+                rows="6"
                 placeholder="Введіть текст"
               ></textarea>
             </div>
 
             <div class="form-policy">
-              <div class="policy-positioning"></div>
-              <input
-                class="policy-checkbox"
-                type="checkbox"
-                name="policy"
-                id="policy"
-              />
-              <label class="policy-label" for="policy">
-                Погоджуюся з розсилкою та приймаю
-                <a href="#">Умови договору</a></label
-              >
+              <div class="policy-positioning">
+                <label class="policy-label" for="policy">
+                  <input
+                    class="policy-checkbox"
+                    type="checkbox"
+                    name="policy"
+                    id="policy"
+                  />
+                  <span class="checkbox-icon"></span>
+                  <span class="checkbox-text"
+                    >Погоджуюся з розсилкою та приймаю
+                    <a class="policy-link" href="#"> Умови договору</a></span
+                  ></label
+                >
+              </div>
               <button class="btn-form" type="submit">Відправити</button>
             </div>
           </form>
         </div>
       </div>
     </div>
+
     <script src="./js/modal.js"></script>
   </body>
 </html>
